@@ -1,5 +1,6 @@
 /log/*
 /tmp/*
+config/database.yml
 vendor/gems/
 !vendor/gems/cache/
 vendor/rails
