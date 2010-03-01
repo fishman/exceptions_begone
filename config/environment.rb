@@ -47,6 +47,13 @@ Rails::Initializer.run do |config|
   config.gem "mislav-will_paginate", :lib => "will_paginate", :source => "http://gems.github.com"
   config.gem "lukeredpath-simpleconfig", :lib => "simpleconfig"
   config.gem "ruby-net-ldap", :lib => "net/ldap"
+  config.gem "configatron"
+
+  require 'configatron'
+
+  # override in your production.rb
+  configatron.mailer.from = '5aAFe4dWY6x08wOHYG5@trash-mail.com'
+  configatron.mailer.to = '5aAFe4dWY6x08wOHYG5@trash-mail.com'
 end
 
 Haml::Template.options[:ugly] = true
