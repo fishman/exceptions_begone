@@ -48,6 +48,7 @@ Rails::Initializer.run do |config|
   config.gem "lukeredpath-simpleconfig", :lib => "simpleconfig"
   config.gem "ruby-net-ldap", :lib => "net/ldap"
   config.gem "configatron"
+  config.gem 'whenever', :lib => false, :source => 'http://gemcutter.org/'
 
   require 'configatron'
 
